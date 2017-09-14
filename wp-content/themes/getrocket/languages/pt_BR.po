@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Get Rocket\n"
+"POT-Creation-Date: 2017-09-12 17:52-0300\n"
+"PO-Revision-Date: 2017-09-12 17:52-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! That page can&rsquo;t be found."
+
+#: 404.php:21
+msgid "It looks like nothing was found at this location."
+msgstr "It looks like nothing was found at this location."
+
+#: functions.php:48
+msgid "Primary"
+msgstr "Primary"
+
+#: functions.php:108
+msgid "Sidebar"
+msgstr "Sidebar"
+
+#: functions.php:110
+msgid "Add widgets here."
+msgstr "Add widgets here."
+
+#: header.php:34
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: inc/option-page.php:16 inc/option-page.php:17
+msgid "Theme Information"
+msgstr "Theme Information"
+
+#: inc/post-type.php:12
+msgctxt "post type general name"
+msgid "Materiais"
+msgstr "Materiais"
+
+#: inc/post-type.php:13
+msgctxt "post type singular name"
+msgid "Material"
+msgstr "Material"
+
+#: inc/post-type.php:14
+msgctxt "admin menu"
+msgid "Materiais"
+msgstr "Materiais"
+
+#: inc/post-type.php:15
+msgctxt "add new on admin bar"
+msgid "Materiais"
+msgstr "Materiais"
+
+#: inc/post-type.php:16 inc/post-type.php:59
+msgctxt "item"
+msgid "Adicionar Novo"
+msgstr "Adicionar Novo"
+
+#: inc/post-type.php:17 inc/post-type.php:60
+msgid "Adicionar Novo"
+msgstr "Adicionar Novo"
+
+#: inc/post-type.php:18 inc/post-type.php:61
+msgid "Novo"
+msgstr "Novo"
+
+#: inc/post-type.php:19 inc/post-type.php:62
+msgid "Salvar"
+msgstr "Salvar"
+
+#: inc/post-type.php:20
+msgid "Editar Material"
+msgstr "Editar Material"
+
+#: inc/post-type.php:21
+msgid "Ver Material"
+msgstr "Ver Material"
+
+#: inc/post-type.php:22
+msgid "Todos Materiais"
+msgstr "Todos Materiais"
+
+#: inc/post-type.php:23
+msgid "Procurar Material"
+msgstr "Procurar Material"
+
+#: inc/post-type.php:24 inc/post-type.php:67
+msgid "Parent Itens:"
+msgstr "Parent Itens:"
+
+#: inc/post-type.php:25
+msgid "Material não encontrado."
+msgstr "Material não encontrado."
+
+#: inc/post-type.php:26
+msgid "Materiais não encontrado."
+msgstr "Materiais não encontrado."
+
+#: inc/post-type.php:55
+msgctxt "post type general name"
+msgid "Ebooks"
+msgstr "Ebooks"
+
+#: inc/post-type.php:56
+msgctxt "post type singular name"
+msgid "Ebook"
+msgstr "Ebook"
+
+#: inc/post-type.php:57
+msgctxt "admin menu"
+msgid "Ebooks"
+msgstr "Ebooks"
+
+#: inc/post-type.php:58
+msgctxt "add new on admin bar"
+msgid "Ebooks"
+msgstr "Ebooks"
+
+#: inc/post-type.php:63
+msgid "Editar Ebook"
+msgstr "Editar Ebook"
+
+#: inc/post-type.php:64
+msgid "Ver Ebook"
+msgstr "Ver Ebook"
+
+#: inc/post-type.php:65
+msgid "Todos Ebooks"
+msgstr "Todos Ebooks"
+
+#: inc/post-type.php:66
+msgid "Procurar Ebook"
+msgstr "Procurar Ebook"
+
+#: inc/post-type.php:68
+msgid "Ebook não encontrado."
+msgstr "Ebook não encontrado."
+
+#: inc/post-type.php:69
+msgid "Ebooks não encontrado."
+msgstr "Ebooks não encontrado."
+
+#. translators: %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Posted on %s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "by %s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:52
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:55
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Posted in %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:62
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Tagged %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:72
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:89
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Edit <span class=\"screen-reader-text\">%s</span>"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nothing Found"
+
+#: template-parts/content-none.php:18
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for."
+msgstr "It seems we can&rsquo;t find what you&rsquo;re looking for."
+
+#. Theme Name of the plugin/theme
+msgid "Get Rocket"
+msgstr "Get Rocket"
+
+#. Theme URI of the plugin/theme
+msgid "http://getrocket.com.br/"
+msgstr "http://getrocket.com.br/"
+
+#. Description of the plugin/theme
+msgid "Tema para infoprodutores"
+msgstr "Tema para infoprodutores"
+
+#. Author of the plugin/theme
+msgid "Basic"
+msgstr "Basic"
+
+#. Author URI of the plugin/theme
+msgid "http://www.basic.com.br/"
+msgstr "http://www.basic.com.br/"
