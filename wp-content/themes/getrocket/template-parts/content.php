@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>" class="container" <?php post_class(); ?>>
 	<header class="entry-header row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 text-center">
       <?php
       if ( is_singular() ) :
         the_title( '<h1 class="entry-title">', '</h1>' );

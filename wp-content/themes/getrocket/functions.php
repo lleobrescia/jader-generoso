@@ -179,3 +179,5 @@ if (defined( 'JETPACK__VERSION' )) {
 require get_template_directory() . '/inc/option-page.php';
 
 require get_template_directory() . '/inc/post-type.php';
+
+require get_template_directory() . '/inc/beaverbuilder.php';

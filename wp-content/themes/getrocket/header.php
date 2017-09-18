@@ -24,7 +24,7 @@
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'get-rocket' ); ?></a>
-
+  <?php if ( get_rocket_show_page_header() ) : ?>
 	<header id="masthead" class="site-header">
     <div class="container">
       <div class="row">
@@ -84,5 +84,5 @@
     </div>
     <!-- container -->
 	</header><!-- #masthead -->
-
+  <?php endif; ?>
 	<div id="content" class="site-content">

@@ -15,12 +15,14 @@ while (have_posts()) : the_post();
 
     <section id="primary" class="content-area container">
         <header class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <h1 class="materiais__title"><?php the_title(); ?></h1>
+            <?php if(get_field('descricao')): ?>
             <div class="materiais__desc">
               <?php the_field('descricao'); ?>
             </div>
             <!-- materiais__desc -->
+            <?php endif;?>
           </div>
           <!-- col-xs-12 -->
         </header>

@@ -588,8 +588,8 @@ textarea {
 }
 
 .footer-navigation .menu-menu-1-container {
-  text-align: center;
   display: block;
+  text-align: center;
 }
 
 .footer-navigation .menu li {
@@ -653,6 +653,7 @@ textarea {
 .footer_social_menu a {
   background: #f9d174;
   border-radius: 90px;
+  color: #333333;
   display: inline-block;
   font-size: 1.2em;
   height: 30px;
@@ -660,7 +661,6 @@ textarea {
   margin: 0 9px;
   text-align: center;
   width: 30px;
-  color: #333333;
 }
 
 .footer_social_menu a:hover,
@@ -676,8 +676,8 @@ textarea {
 .site-header {
   background: black;
   min-height: 114px;
-  padding-top: 19px;
   padding-bottom: 19px;
+  padding-top: 19px;
 }
 
 
@@ -852,7 +852,7 @@ a:active {
 }
 
 .top_social_menu li a {
-  color: #f9d174
+  color: #f9d174;
 }
 
 .top_social_menu li:last-child {
@@ -1436,31 +1436,40 @@ a:active {
 ## Posts and pages
 --------------------------------------------------------------*/
 
-.entry-title {
+.entry-title,
+.materiais__title {
+  border-bottom: solid;
   color: #535353;
-  font-size: 1.875em;
+  display: inline-block;
+  font-size: 4.375em;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 100px;
   margin-top: 70px;
+  padding-bottom: 32px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .content h1,
 .content h2,
 .content h3,
 .content h4,
-.content h5 {
-  color: #535353;
-  font-style: italic;
+.content h5,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5 {
+  color: black;
+  font-family: 'DINPro', sans-serif;
   font-weight: 700;
   margin-bottom: 40px;
   margin-top: 0;
 }
 
-.content p {
-  color: #535353;
+.content p,
+.entry-content p {
+  color: black;
   font-size: 0.875em;
   font-weight: 300;
   margin-bottom: 30px;
@@ -1468,7 +1477,7 @@ a:active {
 
 @media screen and (min-width: 48.000em) {
   .entry-title {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
     margin-top: 110px;
   }
 }
@@ -1486,7 +1495,6 @@ a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
   margin: 1.5em 0 0;
 }
@@ -1519,9 +1527,9 @@ a:active {
 }
 
 .ebook__aside {
-  padding-top: 90px;
-  padding-bottom: 100px;
   background: #f0f0f0;
+  padding-bottom: 100px;
+  padding-top: 90px;
 }
 
 .ebook__aside h2 {
@@ -1529,20 +1537,20 @@ a:active {
   font-style: italic;
   font-weight: 700;
   margin-bottom: 30px;
-  margin-top: 0;
-  max-width: 333px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  max-width: 333px;
 }
 
 .ebook_aside_desc {
   color: #535353;
-  font-weight: 300;
   font-size: 1.125em;
+  font-weight: 300;
   margin-bottom: 53px;
-  max-width: 333px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 333px;
 }
 
 .ebook_aside_desc p {
@@ -1574,18 +1582,18 @@ a:active {
 
 .formulario__wrapper button[type="submit"],
 .formulario__wrapper input[type="submit"] {
-  white-space: normal;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  max-width: 328px;
-  margin: 30px auto 0 auto;
-  display: block;
   background: #0c5d9b;
-  color: #61d1d5;
-  font-size: 18px;
-  font-weight: 700;
   border: none;
+  color: #61d1d5;
+  display: block;
+  font-size: 18px;
   font-style: italic;
+  font-weight: 700;
+  margin: 30px auto 0 auto;
+  max-width: 328px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  white-space: normal;
 }
 
 .formulario__wrapper label {
@@ -1605,17 +1613,6 @@ a:active {
 # Materiais
 --------------------------------------------------------------*/
 
-.materiais__title {
-  color: #535353;
-  font-size: 1.875em;
-  font-style: italic;
-  font-weight: 700;
-  margin-bottom: 30px;
-  margin-top: 70px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .materiais__desc {
   color: #535353;
   font-size: 0.875em;
@@ -1626,9 +1623,6 @@ a:active {
 }
 
 @media screen and (min-width: 48.000em) {
-  .materiais__title {
-    margin-top: 110px;
-  }
   .materiais__desc {
     margin: 0 auto 75px auto;
   }
