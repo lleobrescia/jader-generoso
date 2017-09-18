@@ -127,7 +127,7 @@ function get_rocket_scripts()
 
     wp_enqueue_style( 'owlcarousel-theme', 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css' );
 
-    wp_enqueue_style( 'fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,700,700i|Montserrat:300,300i,400,400i,500,500i,700,700i' );
+    wp_enqueue_style( 'fonts',  get_template_directory_uri().'/fonts/fonts.css' );
 
     wp_enqueue_style( 'fontawesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' );
 

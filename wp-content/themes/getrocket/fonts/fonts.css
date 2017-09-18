@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Black Italic.eot');
+  src: url('Bodoni MT Black Italic.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Black Italic.woff2') format('woff2'), url('Bodoni MT Black Italic.woff') format('woff'), url('Bodoni MT Black Italic.svg#Bodoni MT Black Italic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Black.eot');
+  src: url('Bodoni MT Black.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Black.woff2') format('woff2'), url('Bodoni MT Black.woff') format('woff'), url('Bodoni MT Black.svg#Bodoni MT Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Condensed Bold.eot');
+  src: url('Bodoni MT Condensed Bold.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Condensed Bold.woff2') format('woff2'), url('Bodoni MT Condensed Bold.woff') format('woff'), url('Bodoni MT Condensed Bold.svg#Bodoni MT Condensed Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Condensed Bold Italic.eot');
+  src: url('Bodoni MT Condensed Bold Italic.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Condensed Bold Italic.woff2') format('woff2'), url('Bodoni MT Condensed Bold Italic.woff') format('woff'), url('Bodoni MT Condensed Bold Italic.svg#Bodoni MT Condensed Bold Italic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: condensed;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Condensed Italic.eot');
+  src: url('Bodoni MT Condensed Italic.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Condensed Italic.woff2') format('woff2'), url('Bodoni MT Condensed Italic.woff') format('woff'), url('Bodoni MT Condensed Italic.svg#Bodoni MT Condensed Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: condensed;
+  unicode-range: U+0020-2219;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Condensed.eot');
+  src: url('Bodoni MT Condensed.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Condensed.woff2') format('woff2'), url('Bodoni MT Condensed.woff') format('woff'), url('Bodoni MT Condensed.svg#Bodoni MT Condensed') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Poster Compressed.eot');
+  src: url('Bodoni MT Poster Compressed.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Poster Compressed.woff2') format('woff2'), url('Bodoni MT Poster Compressed.woff') format('woff'), url('Bodoni MT Poster Compressed.svg#Bodoni MT Poster Compressed') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: extra-condensed;
+  unicode-range: U+0020-203A;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Bold.eot');
+  src: url('Bodoni MT Bold.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Bold.woff2') format('woff2'), url('Bodoni MT Bold.woff') format('woff'), url('Bodoni MT Bold.svg#Bodoni MT Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT Italic.eot');
+  src: url('Bodoni MT Italic.eot?#iefix') format('embedded-opentype'), url('Bodoni MT Italic.woff2') format('woff2'), url('Bodoni MT Italic.woff') format('woff'), url('Bodoni MT Italic.svg#Bodoni MT Italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'Bodoni MT';
+  src: url('Bodoni MT.eot');
+  src: url('Bodoni MT.eot?#iefix') format('embedded-opentype'), url('Bodoni MT.woff2') format('woff2'), url('Bodoni MT.woff') format('woff'), url('Bodoni MT.svg#Bodoni MT') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('DINPro-Black.eot');
+  src: url('DINPro-Black.eot?#iefix') format('embedded-opentype'), url('DINPro-Black.woff2') format('woff2'), url('DINPro-Black.woff') format('woff'), url('DINPro-Black.svg#DINPro-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('DINPro-Bold.eot');
+  src: url('DINPro-Bold.eot?#iefix') format('embedded-opentype'), url('DINPro-Bold.woff2') format('woff2'), url('DINPro-Bold.woff') format('woff'), url('DINPro-Bold.svg#DINPro-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'DINPro';
+  src: url('DINPro-Medium.eot');
+  src: url('DINPro-Medium.eot?#iefix') format('embedded-opentype'), url('DINPro-Medium.woff2') format('woff2'), url('DINPro-Medium.woff') format('woff'), url('DINPro-Medium.svg#DINPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'I';
+  src: url('I.eot');
+  src: url('I.eot?#iefix') format('embedded-opentype'), url('I.woff2') format('woff2'), url('I.woff') format('woff'), url('I.svg#I') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-02DC;
+}
