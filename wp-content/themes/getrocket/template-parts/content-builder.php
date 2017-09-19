@@ -14,52 +14,53 @@
   ?>
 
   <?php  if( get_row_layout() == 'slider' ): ?>
-  <section class="slider hidden-xs"> 
-    <?php if( have_rows('slide') ): ?>
-      <div class="owl-carousel owl-theme">
-        <?php while ( have_rows('slide') ) : the_row(); ?>
-          <div class="item">
-            <?php if(get_sub_field('link')): ?>
-              <a href="<?= get_sub_field('link'); ?>" >
+    <section class="slider hidden-xs"> 
+      <?php if( have_rows('slide') ): ?>
+        <div class="owl-carousel owl-theme">
+          <?php while ( have_rows('slide') ) : the_row(); ?>
+            <div class="item">
+              <?php if(get_sub_field('link')): ?>
+                <a href="<?= get_sub_field('link'); ?>" >
+                  <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
+                </a>
+              <?php else: ?>
                 <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
-              </a>
-            <?php else: ?>
-              <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
-            <?php endif;?>
-          </div>
-        <?php endwhile;  ?>
-      </div>
-      <!-- owl-carousel -->
-    <?php endif;?>
-  </section>
+              <?php endif;?>
+            </div>
+          <?php endwhile;  ?>
+        </div>
+        <!-- owl-carousel -->
+      <?php endif;?>
+    </section>
 
 
-  <?php elseif( get_row_layout() == 'captura_de_lead' ): ?>
+  <?php elseif( get_row_layout() == 'captura_de_lead' ): $bg_lead = get_sub_field('bg_lead')  ?>
+    <style>
+      .lead{
+        background: url('<?= $bg_lead['url']; ?>')  center !important;
+      }
+    </style>
     <section class="lead">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
-          </div>
-          <!-- col-sm-3 -->
-          <div class="col-sm-5 texto">
-            <span>
-            <?php the_sub_field('texto');?>
-            </span>
-            
-          </div>
-          <!-- col-sm-5 -->
-          <div class="col-sm-3 botao">
-            <span>
+          <div class="col-xs-12">
+            <div class="texto">
+              <?php the_sub_field('texto');?>
+            </div>
+            <!-- texto -->
+
+            <div class="botao">
               <a href="<?php the_sub_field('link_do_botão');?>" target="_blank"><?php the_sub_field('texto_do_boão');?></a>
-            </span>
-            <style>
-              .lead a{
-                background:<?php the_sub_field('cor_de_fundo_do_botão');?>;
-                color:<?php the_sub_field('cor_da_fonte');?>;
-              }
-            </style>
+              <style>
+                .lead a{
+                  background:<?php the_sub_field('cor_de_fundo_do_botão');?>;
+                  color:<?php the_sub_field('cor_da_fonte');?>;
+                }
+              </style>
+            </div>
+            <!-- botao -->
           </div>
+          <!-- col-xs-12 -->
         </div>
         <!-- row -->
       </div>
@@ -71,12 +72,20 @@
   <?php elseif( get_row_layout() == 'imagemtexto' ): ?>
     <section class="imagem__texto container">
       <div class="row">
+        <div class="col-xs-12 text-center">
+          <h1><?php the_sub_field('titulo');?></h1>
+        </div>
+        <!-- col-xs-12 -->
+      </div>
+      <!-- row -->
+
+      <div class="row">
         <div class="col-sm-3 col-sm-offset-1">
           <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
         </div>
         <!-- col-sm-3 -->
         <div class="col-sm-6 col-sm-offset-1">
-          <h1><?php the_sub_field('titulo');?></h1>
+          
 
           <div class="texto">
             <?php the_sub_field('texto');?>
@@ -88,8 +97,8 @@
             
           <?php if(get_field('facebook', 'option')): ?>
             <div class="social">
-              <h4>Siga a Elena no Facebook</h4>
-              <div class="fb-page" data-href="<?= get_field('facebook', 'option')?>" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="<?= get_field('facebook', 'option')?>" class="fb-xfbml-parse-ignore"><a href="<?= get_field('facebook', 'option')?>">Elena Klein</a></blockquote></div>
+              <h4>SIGA O JADER  NO FACEBOOK</h4>
+              <div class="fb-page" data-href="<?= get_field('facebook', 'option')?>" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="<?= get_field('facebook', 'option')?>" class="fb-xfbml-parse-ignore"><a href="<?= get_field('facebook', 'option')?>">JADER</a></blockquote></div>
             </div>
           <?php endif;?>
         </div>
@@ -173,7 +182,12 @@
       }
     </style>
   
-  <?php elseif( get_row_layout() == 'youtube' ): ?>
+  <?php elseif( get_row_layout() == 'youtube' ): $youtube_bg = get_sub_field('youtube_bg') ?>
+    <style>
+      .youtube{
+        background: url('<?= $youtube_bg['url']; ?>')  no-repeat center !important;
+      }
+    </style>
     <section class="youtube">
       <div class="container">
         <div class="row">

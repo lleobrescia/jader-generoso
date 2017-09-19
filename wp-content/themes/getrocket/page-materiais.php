@@ -1,6 +1,6 @@
 <?php
 /**
- * template name:materiais
+ * Template Name: Materiais
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
