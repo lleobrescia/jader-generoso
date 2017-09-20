@@ -38,7 +38,7 @@
 
       <div class="row footer__detalhes">
         <div class="col-sm-4">
-          <h3>Post Elena Klein</h3>
+          <h3>Post Jader Generoso</h3>
 
           <p ng-repeat="item in main.posts"><a ng-href="{{item.link}}" target="_blank">{{item.title.rendered}}</a></p>
         </div>
@@ -117,7 +117,7 @@
 
     function MainController($http) {
       var vm = this;
-      var site = 'http://elenaklein.com.br/blog';
+      var site = 'http://jadergeneroso.com.br/blog';
 
       vm.posts = [];
 

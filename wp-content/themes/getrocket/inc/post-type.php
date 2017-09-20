@@ -48,6 +48,49 @@ function get_rocket_custom_post_materiais()
     register_post_type( 'material', $args );
 }
 
+add_action( 'init', 'get_rocket_custom_post_cursos' );
+function get_rocket_custom_post_cursos()
+{
+    $labels = array(
+    'name'               => _x( 'Cursos', 'post type general name' ),
+    'singular_name'      => _x( 'Curso', 'post type singular name' ),
+    'menu_name'          => _x( 'Cursos', 'admin menu' ),
+    'name_admin_bar'     => _x( 'Cursos', 'add new on admin bar' ),
+    'add_new'            => _x( 'Adicionar Novo', 'item' ),
+    'add_new_item'       => __( 'Adicionar Novo' ),
+    'new_item'           => __( 'Novo' ),
+    'update_item'        => __( 'Salvar' ),
+    'edit_item'          => __( 'Editar Curso' ),
+    'view_item'          => __( 'Ver Curso' ),
+    'all_items'          => __( 'Todos Cursos' ),
+    'search_items'       => __( 'Procurar Curso' ),
+    'parent_item_colon'  => __( 'Parent Itens:' ),
+    'not_found'          => __( 'Curso não encontrado.' ),
+    'not_found_in_trash' => __( 'Cursos não encontrado.' )
+    );
+    
+    $args = array(
+    'labels'                => $labels,
+    'public'                => true,
+    'publicly_queryable'    => true,
+    'show_ui'               => true,
+    'show_in_rest'          => true,
+    'show_in_menu'          => true,
+    'query_var'             => true,
+    'rewrite'               => array( 'slug' => 'cursos' ),
+    'capability_type'       => 'post',
+    'has_archive'           => true,
+    'menu_icon'             => 'dashicons-welcome-learn-more',
+    'hierarchical'          => false,
+    'menu_position'         => 5,
+    'rest_base'             => 'cursos',
+    'rest_controller_class' => 'WP_REST_Posts_Controller',
+    'supports'              => array( 'title','thumbnail')
+    );
+    
+    register_post_type( 'cursos', $args );
+}
+
 add_action( 'init', 'get_rocket_custom_post_ebook' );
 function get_rocket_custom_post_ebook()
 {
