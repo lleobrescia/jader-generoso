@@ -22,7 +22,7 @@
   <section class="footer__top">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 text-center">
           <nav class="footer-navigation">
             <?php
               wp_nav_menu( array(
@@ -31,26 +31,7 @@
               ) );
             ?>
           </nav><!-- #footer-navigation -->
-        </div>
-        <!-- col-xs-12 -->
-      </div>
-      <!-- row -->
-
-      <div class="row footer__detalhes">
-        <div class="col-sm-4">
-          <h3>Post Jader Generoso</h3>
-
-          <p ng-repeat="item in main.posts"><a ng-href="{{item.link}}" target="_blank">{{item.title.rendered}}</a></p>
-        </div>
-        <!-- col-sm-4 -->
-        <div class="col-sm-4">
-          <h3>INSTAGRAM</h3>
-          <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/266b04f2c5eb53b7908289d837de4c1e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
-        </div>
-        <!-- col-sm-4 -->
-        <div class="col-sm-4">
-          <h3>Acompanhe minhas redes</h3>
-            <?php
+          <?php
               $facebook  = get_field('facebook', 'option');
               $instagram = get_field('instagram', 'option');
               $youtube   = get_field('youtube', 'option');
@@ -81,6 +62,26 @@
                 <?php endif; ?>
             </ul>
             <?php                                                                                                                                                                                                                                                                                                                           endif; ?>
+        </div>
+        <!-- col-xs-12 -->
+      </div>
+      <!-- row -->
+
+      <div class="row footer__detalhes">
+        <div class="col-sm-4">
+          <h3>Blog</h3>
+
+          <p ng-repeat="item in main.posts"><a ng-href="{{item.link}}" target="_blank">{{item.title.rendered}}</a></p>
+        </div>
+        <!-- col-sm-4 -->
+        <div class="col-sm-4">
+          <h3>INSTAGRAM</h3>
+          <script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/266b04f2c5eb53b7908289d837de4c1e.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+        </div>
+        <!-- col-sm-4 -->
+        <div class="col-sm-4">
+          <h3>Facebook</h3>
+          <div class="fb-page" data-href="https://www.facebook.com/Jadergenerosobr/" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Jadergenerosobr/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Jadergenerosobr/">Jader Generoso</a></blockquote></div>
         </div>
         <!-- col-sm-4 -->
       </div>

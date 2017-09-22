@@ -281,7 +281,6 @@ th {
 # Typography
 --------------------------------------------------------------*/
 
-body,
 button,
 input,
 select,
@@ -574,9 +573,20 @@ textarea {
 
 .footer__top {
   background-color: #393939;
-  background-size: cover;
+  background-size: cover !important;
   padding-bottom: 53px;
   padding-top: 30px;
+}
+
+.footer-navigation {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media(min-width:48.000em) {
+  .footer-navigation {
+    margin-bottom: 64px;
+  }
 }
 
 .footer-navigation .menu {
@@ -606,11 +616,6 @@ textarea {
   color: #f9d174;
 }
 
-.footer-navigation {
-  display: block;
-  margin-bottom: 64px;
-}
-
 .footer__detalhes h3 {
   border-bottom: thin solid #e31111;
   color: #f0f0f0;
@@ -634,6 +639,7 @@ textarea {
 }
 
 .footer_social_menu {
+  display: inline-block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -641,6 +647,7 @@ textarea {
 
 @media(min-width:48.000em) {
   .footer_social_menu {
+    float: right;
     text-align: right;
   }
 }
@@ -1046,8 +1053,8 @@ a:active {
 
 @media screen and (min-width: 30.000em) {
   .lead .botao a {
-    width: 460px;
     bottom: -2px;
+    width: 460px;
   }
 }
 
@@ -1100,19 +1107,13 @@ a:active {
   padding-bottom: 58px;
 }
 
-@media screen and (min-width: 48.000em) {
-  .imagem__texto {
-    padding-bottom: 85px;
-  }
-}
-
 .imagem__texto h1 {
   color: black;
   display: inline-block;
   font-size: 4.375em;
   font-style: italic;
   font-weight: 400;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   padding-bottom: 30px;
   position: relative;
   text-align: center;
@@ -1256,13 +1257,12 @@ a:active {
 
 .cursos .botao {
   border-radius: 5px;
-  font-size: 1.500em;
+  font-size: 15px;
   font-style: italic;
   font-weight: 500;
-  margin-top: 57px;
+  margin-top: 10px;
   max-width: 370px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 5px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1283,7 +1283,7 @@ a:active {
 }
 
 .youtube {
-  background-size: cover;
+  background-size: cover !important;
   padding-bottom: 52px;
   padding-top: 63px;
 }
@@ -1732,6 +1732,7 @@ a:active {
 
 .materiais__desc p {
   margin: 0;
+  font-size: 1.5em;
 }
 
 
@@ -1746,10 +1747,26 @@ a:active {
   text-align: center;
 }
 
+.material .saiba-mais {
+  border-radius: 5px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 10px;
+  max-width: 100px;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #e31111;
+  color: #ffffff;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 48.000em) {
   .material {
     margin-bottom: 90px;
-    text-align: left;
   }
 }
 

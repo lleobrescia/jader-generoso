@@ -54,7 +54,7 @@ while (have_posts()) : the_post();
             </div>
             <!-- material__descricao -->
 
-            <a  class="material__link"href="<?= $link; ?>" title="<?= get_the_title(); ?>"></a>
+            <a  class="saiba-mais"href="<?= $link; ?>" title="<?= get_the_title(); ?>">Saiba Mais</a>
           </div>
           <!-- material-<?php the_ID(); ?> -->
           

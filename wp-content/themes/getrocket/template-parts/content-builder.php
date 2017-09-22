@@ -95,12 +95,6 @@
             <a href="<?= get_sub_field('link') ?>" class="pull-right botao">Saiba mais <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           <?php endif;?>
             
-          <?php if(get_field('facebook', 'option')): ?>
-            <div class="social">
-              <h4>SIGA O JADER  NO FACEBOOK</h4>
-              <div class="fb-page" data-href="<?= get_field('facebook', 'option')?>" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="<?= get_field('facebook', 'option')?>" class="fb-xfbml-parse-ignore"><a href="<?= get_field('facebook', 'option')?>">JADER</a></blockquote></div>
-            </div>
-          <?php endif;?>
         </div>
         <!-- col-sm-6 -->
       </div>
@@ -111,13 +105,6 @@
   <?php elseif( get_row_layout() == 'cursos' ): ?>
     <section class="cursos">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 text-center">
-            <h2><?php the_sub_field('titulo_principal');?></h2>
-          </div>
-          <!-- col-xs-12 -->
-        </div>
-        <!-- row -->
 
         <div class="row">
           <div class="col-sm-4 imagem">
@@ -126,11 +113,15 @@
           <!-- col-sm-4 -->
 
           <div class="col-sm-7 col-sm-offset-1">
-            <h3><?php the_sub_field('titulo');?></h3>
+            
+            <img style="margin-bottom: 40px" src="<?= get_template_directory_uri();?>/images/mechas-poderosas.png" alt="Mechas Poderosas" class="img-responsive center-block">
             <div ckass="texto">
               <?php the_sub_field('descricao');?>
             </div>
             <!-- texto -->
+            <?php if(get_sub_field('link_do_botao')): ?>
+              <a href="<?php the_sub_field('link_do_botao');?>" class="center-block botao pull-right"><?php the_sub_field('texto_do_botao');?></a>
+            <?php endif;?>
           </div>
           <!-- col-sm-7 -->
         </div>
@@ -156,13 +147,6 @@
         <?php endif;?>
         
         <?php if(get_sub_field('link_do_botao')): ?>
-        <div class="row">
-          <div class="col-xs-12">
-            <a href="<?php the_sub_field('link_do_botao');?>" class="center-block botao"><?php the_sub_field('texto_do_botao');?></a>
-          </div>
-          <!-- col-xs-12 -->
-        </div>
-        <!-- row -->
         <style>
           .cursos .botao {
             background:<?php the_sub_field('cor_de_fundo_do_botao');?>;
