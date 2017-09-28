@@ -43,30 +43,51 @@
     <section class="lead">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-sm-8">
             <div class="texto">
               <?php the_sub_field('texto');?>
             </div>
             <!-- texto -->
-
-            <div class="botao">
-              <a href="<?php the_sub_field('link_do_botão');?>" target="_blank"><?php the_sub_field('texto_do_boão');?></a>
-              <style>
-                .lead a{
-                  background:<?php the_sub_field('cor_de_fundo_do_botão');?>;
-                  color:<?php the_sub_field('cor_da_fonte');?>;
-                }
-              </style>
-            </div>
-            <!-- botao -->
           </div>
-          <!-- col-xs-12 -->
+          <!-- col-sm-8 -->
+
+          <div class="col-sm-4">
+            <?php the_sub_field('formulario');?>
+          </div>
+          <!-- col-sm-4 -->
         </div>
         <!-- row -->
       </div>
       <!-- container -->
     </section>
     <!-- lead -->
+
+    <?php elseif( get_row_layout() == 'captura_de_lead2' ): 
+      $token = md5(uniqid(""));
+      $bg_lead2 = get_sub_field('bg_lead')
+    ?>
+    <section class="lead2" id="<?= $token; ?>">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <?= wp_get_attachment_image( get_sub_field('imagem')['id'], 'full', "", "" );  ?>
+          </div>
+          <!-- col-sm-3 -->
+          <div class="col-sm-8">
+            <?php the_sub_field('formulario');?>
+          </div>
+          <!-- col-sm-7 -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+    <!-- lead -->
+    <style>
+      .lead2 {
+        background: url('<?= $bg_lead2['url']; ?>')  center !important;
+      }
+    </style>
   
 
   <?php elseif( get_row_layout() == 'imagemtexto' ): ?>
