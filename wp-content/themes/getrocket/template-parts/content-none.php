@@ -14,7 +14,11 @@
         <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'get-rocket' ); ?></h1>
     </header><!-- .page-header -->
 
-    <div class="page-content">
-      <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for.', 'get-rocket' ); ?></p>
+    <div class="page-content container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for.', 'get-rocket' ); ?></p>
+        </div>
+      </div>
     </div><!-- .page-content -->
 </section><!-- .no-results -->
